@@ -1,0 +1,111 @@
+{
+  "bot.nickname": {
+    "type": "string",
+    "required": true
+  },
+  "logging.level": {
+    "type": "integer",
+    "required": true
+  },
+  "logging.colours": {
+    "type": "dict",
+    "required": true,
+    "schema": {
+      "message": {
+        "type": "integer",
+        "required": true
+      },
+      "private_message": {
+        "type": "integer",
+        "required": true
+      },
+      "command": {
+        "type": "integer",
+        "required": true
+      }
+    }
+  },
+  "server.hostname": {
+    "type": "string",
+    "required": true
+  },
+  "server.port": {
+    "type": "integer",
+    "required": true
+  },
+  "channel": {
+    "type": "string",
+    "required": true
+  },
+  "dev_nick": {
+    "type": "string"
+  },
+  "commands.prefix": {
+    "type": "string",
+    "required": true
+  },
+  "commands": {
+    "type": "dict",
+    "required": true,
+    "schema": {
+      "help": {
+        "type": "list",
+        "required": true,
+        "schema": {"type": "string"}
+      },
+      "latency": {
+        "type": "list",
+        "required": true,
+        "schema": {"type": "string"}
+      },
+      "time": {
+        "type": "list",
+        "required": true,
+        "schema": {"type": "string"}
+      },
+      "download": {
+        "type": "list",
+        "required": true,
+        "schema": {"type": "string"}
+      }
+    }
+  },
+  "commands.time.times": {
+    "type": "dict",
+    "required": true,
+    "schema": {
+      "format": {
+        "type": "string",
+        "required": true
+      },
+      "pastoral": {
+        "type": "string",
+        "required": true
+      },
+      "session_1": {
+        "type": "string",
+        "required": true
+      },
+      "session_2": {
+        "type": "string",
+        "required": true
+      },
+      "session_3": {
+        "type": "string",
+        "required": true
+      },
+      "session_4": {
+        "type": "string",
+        "required": true
+      },
+      "session_5": {
+        "type": "string",
+        "required": true
+      },
+      "session_6": {
+        "type": "string",
+        "required": true
+      }
+    }
+  }
+}

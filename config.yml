@@ -1,0 +1,71 @@
+## Bot client
+bot.nickname: Brick
+
+
+## Logging
+# 10: DEBUG
+# 20: INFO
+# 30:
+# 40:
+# 50:
+logging.level: 10  # todo validation
+logging.colours:  # todo system messages
+  message: 4
+  private_message: 14
+  command: 13
+
+
+## Server
+server.hostname: localhost  # irc.irchighway.net
+server.port: 6667
+channel: bricktest  #  don't use '#'  # todo multiple channels
+
+
+## Misc
+# User with this nickname can control admin functions of the bot (optional)
+dev_nick: Dorphen
+
+
+## Commands
+# This section contains the `commands` list which should contain all the following commands, and a list of aliases
+# - help
+# - ping
+# - time
+# - download
+
+commands.prefix: "!"  # commands begin with this
+commands:
+  help:
+      - help
+      - brick
+      - commands
+  latency:
+      - ping
+      - pong
+      - latency
+      - connection
+      - delay
+      - lag
+  time:
+      - time
+      - session
+      - class
+      - timetable
+      - next
+  download:
+      - download
+      - get
+      - unblock
+
+
+## Configuration for individual commands
+# timetable session times, in format HH:MM (24 hour time)
+commands.time.times:
+  format: "%H:%M"
+  pastoral: "08:43"
+  session_1: "08:56"
+  session_2: "09:50"
+  session_3: "11:02"
+  session_4: "11:56"
+  session_5: "13:28"
+  session_6: "14:22"
